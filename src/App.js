@@ -1,22 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import FetchApiData from './components/FetchApiData';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Fetching API Data from <a>https://randomuser.me/api</a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div style={{display: 'flex',alignItems: 'left', justifyContent:'left'}}>
+          <em>
+            <FetchApiData/>
+          </em>
+        </div>
       </header>
     </div>
   );
